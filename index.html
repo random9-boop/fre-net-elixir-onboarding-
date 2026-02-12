@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRE Google Ads Onboarding - Summary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 40px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        
+        .alert-box {
+            background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+            color: #fff;
+            padding: 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .alert-box h2 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .alert-box ul {
+            list-style: none;
+        }
+        .alert-box li {
+            background: rgba(255,255,255,0.15);
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .alert-box li:last-child { margin-bottom: 0; }
+        .alert-box .number {
+            background: rgba(255,255,255,0.3);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        
+        .section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .section-icon {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        
+        .item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .item-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .item-value {
+            font-size: 14px;
+            color: #1a1a1a;
+        }
+        .item-value a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+        .item-value a:hover {
+            text-decoration: underline;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #43a047;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 4px;
+        }
+        .tag.pending {
+            background: #fff3e0;
+            color: #ff9800;
+        }
+        
+        .competitors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .competitor {
+            background: #f5f5f5;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        .team-member {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+        }
+        .team-member strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        .team-member span {
+            font-size: 12px;
+            color: #666;
+        }
+        .team-member a {
+            font-size: 12px;
+            color: #4facfe;
+            text-decoration: none;
+        }
+        
+        .next-steps {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 24px;
+            border-radius: 16px;
+        }
+        .next-steps h3 {
+            color: #fff;
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+        .next-steps ul {
+            list-style: none;
+        }
+        .next-steps li {
+            padding: 8px 0;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .check {
+            width: 20px;
+            height: 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        .check.done { background: #43a047; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FRE Google Ads Onboarding</h1>
+        <p class="subtitle">NetElixir Partnership • February 2026</p>
+        
+        <!-- ACTION REQUIRED -->
+        <div class="alert-box">
+            <h2>🔴 Action Required — Connor Needs to Address</h2>
+            <ul>
+                <li><span class="number">1</span><strong>Age Exclusions:</strong> Confirm which states require 21+ age targeting (vs 18+). Check if there's a list of states/zips that don't allow advertising to under 21.</li>
+                <li><span class="number">2</span><strong>Target ROAS:</strong> What is the target ROAS? Floor ROAS? Does this differ for New vs Returning customers?</li>
+                <li><span class="number">3</span><strong>Marketing Experiments:</strong> Has experimentation been part of the strategy? Any key learnings from recent tests?</li>
+                <li><span class="number">4</span><strong>Historical Data:</strong> Any resources or data from previous ad partners (CapConvert)? Past experiments, campaign details, challenges?</li>
+                <li><span class="number">5</span><strong>Email/SMS Strategy:</strong> Already answered Klaviyo (3 campaigns/week, multiple flows) — but NetElixir may want more detail or access.</li>
+            </ul>
+        </div>
+        
+        <!-- BRAND DIFFERENTIATORS -->
+        <div class="section">
+            <h3><span class="section-icon">💪</span>Brand Differentiators</h3>
+            <div class="item">
+                <div class="item-label">Strength Range</div>
+                <div class="item-value">Only major brand with 3mg to 15mg (ultra-strong)</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Pre-Primed Technology</div>
+                <div class="item-value">Moist pouches = instant flavor & nicotine (vs dry pouches that need activation)</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Comfort</div>
+                <div class="item-value">Soft, flexible materials with controlled release</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Other Advantages</div>
+                <div class="item-value">Referral program, 100-count mega packs, 14% subscription discount, Watermelon exclusive flavor</div>
+            </div>
+        </div>
+        
+        <!-- AUDIENCE & TARGETING -->
+        <div class="section">
+            <h3><span class="section-icon">🎯</span>Audience & Targeting</h3>
+            <div class="item">
+                <div class="item-label">New vs Returning Revenue Split</div>
+                <div class="item-value">
+                    <span class="tag">Soft Goal</span> 37% New / 63% Returning<br>
+                    <span class="tag pending">Aggressive Goal</span> 50% New / 50% Returning
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-label">Age Targeting</div>
+                <div class="item-value">
+                    18-25 = $47,145 spend last 12 months in Google Ads<br>
+                    <span class="tag pending">TBD</span> NetElixir recommends excluding for legality — needs state-by-state confirmation
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-label">Shipping Restrictions</div>
+                <div class="item-value"><a href="https://frepouch.com/pages/shipping-restrictions" target="_blank">frepouch.com/pages/shipping-restrictions</a></div>
+            </div>
+        </div>
+        
+        <!-- COMPETITORS -->
+        <div class="section">
+            <h3><span class="section-icon">⚔️</span>Competitors</h3>
+            <div class="competitors">
+                <span class="competitor">ZYN</span>
+                <span class="competitor">Lucy.co</span>
+                <span class="competitor">PIXI</span>
+                <span class="competitor">VELO</span>
+                <span class="competitor">On!</span>
+                <span class="competitor">Rouge</span>
+                <span class="competitor">Fully Loaded Chew</span>
+                <span class="competitor">NicoKick.com</span>
+                <span class="competitor">21pouches.com</span>
+                <span class="competitor" style="background:#e8f5e9;color:#43a047;">ALP Pouch (we own 50%)</span>
+            </div>
+        </div>
+        
+        <!-- PROMOTIONS -->
+        <div class="section">
+            <h3><span class="section-icon">💰</span>Promotions & Offers</h3>
+            <div class="item">
+                <div class="item-label">New User Offer</div>
+                <div class="item-value">
+                    <strong>$20 off first purchase</strong> — new landing page in development<br>
+                    No min order, no promo code needed<br>
+                    <span class="tag pending">Coordinate with Kylee before launch</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-label">Mega Pack Monday</div>
+                <div class="item-value">Spend $100 → free mega pouch (auto-applies at checkout)</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Product Exclusions</div>
+                <div class="item-value">
+                    Exclude clothing & tins from evergreen campaigns (activate for holiday gifting)<br>
+                    Consider: Premium Tin + Mega Pack bundle for returning users
+                </div>
+            </div>
+        </div>
+        
+        <!-- BUDGET & GOALS -->
+        <div class="section">
+            <h3><span class="section-icon">📊</span>Budget & Goals</h3>
+            <div class="item">
+                <div class="item-label">Budget</div>
+                <div class="item-value"><strong>No budget constraints</strong> — flexible monthly spend</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Primary Goal</div>
+                <div class="item-value">New user acquisition + upper funnel activation (YouTube, video)</div>
+            </div>
+            <div class="item">
+                <div class="item-label">KPIs</div>
+                <div class="item-value">Revenue, ROAS, CTR, CVR, Clicks, Impressions, AOV</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Microsoft Ads</div>
+                <div class="item-value">Not currently running — NetElixir to launch after Google Ads optimization</div>
+            </div>
+        </div>
+        
+        <!-- CREATIVE TEAM -->
+        <div class="section">
+            <h3><span class="section-icon">🎨</span>Creative Team Contacts</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <strong>Sanjay</strong>
+                    <span>Web Developer</span><br>
+                    <a href="mailto:hello@edgywebsites.com">hello@edgywebsites.com</a>
+                </div>
+                <div class="team-member">
+                    <strong>Jacob Moore</strong>
+                    <span>Creative Director</span><br>
+                    <a href="mailto:jmoore@tpbi.com">jmoore@tpbi.com</a>
+                </div>
+                <div class="team-member">
+                    <strong>David Ko</strong>
+                    <span>Social + Content</span><br>
+                    <a href="mailto:dko@tpbi.com">dko@tpbi.com</a>
+                </div>
+                <div class="team-member">
+                    <strong>Ben Logan</strong>
+                    <span>Social + UGC/CTV</span><br>
+                    <a href="mailto:Blogan@tpbi.com">Blogan@tpbi.com</a>
+                </div>
+                <div class="team-member">
+                    <strong>Michael Ries</strong>
+                    <span>Graphic Designer</span><br>
+                    <a href="mailto:MRies@TPBI.com">MRies@TPBI.com</a>
+                </div>
+            </div>
+            <div class="item" style="margin-top: 16px;">
+                <div class="item-label">Typical Turnaround</div>
+                <div class="item-value">1-2 weeks depending on complexity (animation, etc.)</div>
+            </div>
+        </div>
+        
+        <!-- TECH STACK -->
+        <div class="section">
+            <h3><span class="section-icon">🔧</span>Tech Stack & Tools</h3>
+            <div class="item">
+                <div class="item-label">Source of Truth</div>
+                <div class="item-value"><strong>Shopify</strong> (some discrepancies with GA4 noted)</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Analytics</div>
+                <div class="item-value">Triple Whale, GA4 (Connor's dashboard)</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Email/SMS</div>
+                <div class="item-value">Klaviyo — 3 campaigns/week, flows: abandoned cart, browse, welcome, winback, upsell, loyalty (Yotpo)</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Task Management</div>
+                <div class="item-value">Asana (creative requests), Slack (Volume99 agency for email/SMS)</div>
+            </div>
+            <div class="item">
+                <div class="item-label">Policy Issues</div>
+                <div class="item-value">History of Google policy violations — NetElixir to request Google rep through agency partnership</div>
+            </div>
+        </div>
+        
+        <!-- UPCOMING -->
+        <div class="section">
+            <h3><span class="section-icon">🚀</span>Upcoming Initiatives</h3>
+            <div class="item">
+                <div class="item-value">
+                    <strong>Watermelon Mega Pack launch</strong> — next month<br>
+                    <strong>$20 off new user landing page</strong> — coordinate with Kylee
+                </div>
+            </div>
+        </div>
+        
+        <!-- NEXT STEPS -->
+        <div class="section next-steps">
+            <h3>📋 NetElixir Next Steps</h3>
+            <ul>
+                <li><span class="check done">✓</span> Share marketing calendar</li>
+                <li><span class="check done">✓</span> Share image/video creative drive</li>
+                <li><span class="check done">✓</span> Share brand guidelines</li>
+                <li><span class="check">○</span> NetElixir auditing Google Ads account next week</li>
+                <li><span class="check">○</span> Preparing strategy deck for new campaigns + optimizations</li>
+                <li><span class="check">○</span> Will review changes before implementing</li>
+                <li><span class="check">○</span> Connor to share $20 off landing page preview when ready</li>
+            </ul>
+        </div>
+        
+        <!-- RESOURCES -->
+        <div class="section">
+            <h3><span class="section-icon">📁</span>Shared Resources</h3>
+            <div class="item">
+                <div class="item-label">Graphics & Logos</div>
+                <div class="item-value"><a href="https://www.dropbox.com/scl/fo/t8k1hu0fdpticomjgrwn5/AHra7bYZN-5QxTPXrjGPfwU?rlkey=cir1jtgkznahh8bith81dpjbf&st=eubqx412&dl=0" target="_blank">Dropbox Folder</a></div>
+            </div>
+            <div class="item">
+                <div class="item-label">Product Renders</div>
+                <div class="item-value"><a href="https://www.dropbox.com/scl/fo/mnereblgmghjd7u3kadf0/AGOWdTLpeNjb4bcPibHnDd8?rlkey=95mdz0bdl0yfzo9laufhuwjr0&st=tkrbh4v9&dl=0" target="_blank">Dropbox Folder</a></div>
+            </div>
+            <div class="item">
+                <div class="item-label">Videos</div>
+                <div class="item-value"><a href="https://www.dropbox.com/scl/fo/g20r9gjqei99ca23v0rs9/AFhmOjWUNom3MpYuuCuZYRY?rlkey=ldnmrnau2bo2a8ijymx57w6pd&st=kqfjsrdj&dl=0" target="_blank">Dropbox Folder</a></div>
+            </div>
+            <div class="item">
+                <div class="item-label">Brand Guidelines</div>
+                <div class="item-value"><a href="https://www.dropbox.com/scl/fi/0vatbi3s9stwvelux01fl/FRE-Brand-Guidelines_A1.pdf?rlkey=gcrfz1ayaay2yartyfrzuq79u&st=ynyr2f4o&dl=0" target="_blank">FRE Brand Guidelines PDF</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
